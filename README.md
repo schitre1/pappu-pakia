@@ -1,5 +1,7 @@
 # Pappu Pakia
 
+(Forked from Original with below details)
+
 ![Pappu Pakia](http://i.imgur.com/zYD37.png)
 
 This HTML5 Game (Pappu Pakia) has been happily made for the
