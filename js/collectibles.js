@@ -59,6 +59,10 @@
           this.drawInvincible(ctx);
           break;
 
+        case  'ppgoody':
+          this.drawPPGoody(ctx);
+          break;
+
       }
 
       return;
@@ -92,7 +96,17 @@
         this.y
       );
     };
+
+    this.drawPPGoody = function(ctx) {
+      ctx.drawImage(
+        mit.CollectibleUtils.ppgoody_img,
+        this.x,
+        this.y
+      );
+    };
   };
+
+  
 
 
   mit.CollectibleUtils = {
@@ -101,7 +115,7 @@
 
     count: 2,
 
-    types: ['coin', 'clone', 'invincible'],
+    types: ['coin', 'clone', 'invincible', 'ppgoody'],
     //types: ['invincible'],
 
     sub_types: {
@@ -120,6 +134,8 @@
       // this.invincible_img = new Image();
       // this.invincible_img.src = 'img/star.png';
       this.invincible_img = mit.image.star;
+
+      this.ppgoody_img = mit.image.ppgoody;
     },
 
     getCoinSpritePos: function(sub_type) {
@@ -278,6 +294,10 @@
             // Show timer
             mit.ui.invincible_timer.show();
 
+            break;
+
+            case 'ppgoody':
+            mit.score += 100;
             break;
         }
 
