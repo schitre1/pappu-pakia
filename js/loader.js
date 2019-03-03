@@ -46,6 +46,7 @@
     happy_pakia : "img/happy_pakia.png",
     log : "img/log.png",
     pappu : "img/pappu.png",
+    ppgoody: "img/apple.png",
     plank_bot : "img/plank_bot.png",
     plank_mid : "img/plank_mid.png",
     plank_top : "img/plank_top.png",
@@ -117,7 +118,7 @@
       }
 
     };
-
+    console.log('Loading image '+ src);
     mit.image[src].src = images[src];
   }
 

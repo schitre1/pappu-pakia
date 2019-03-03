@@ -98,6 +98,7 @@
     };
 
     this.drawPPGoody = function(ctx) {
+      console.log('drawing apple img');
       ctx.drawImage(
         mit.CollectibleUtils.ppgoody_img,
         this.x,

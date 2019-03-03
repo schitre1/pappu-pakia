@@ -167,7 +167,7 @@
       There are some collectibles too! Coins for points (yellow for 50,
       pink for 100, red for 500). Stars for invincibility
       for a short period. Berries spawning clones that'll destroy
-      anything that comes in their way!
+      anything that comes in their way! Pineapples in your way will increase your score!
     </p>
     <p>
       Collisions are not super strict
@@ -210,9 +210,18 @@
 
       /* * * DON'T EDIT BELOW THIS LINE * * */
       (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          var dsq = document.createElement('script'); 
+          var head = document.getElementsByTagName('head')[0];
+          var body = document.getElementsByTagName('body')[0];
+          
+          dsq.type = 'text/javascript'; 
+          dsq.async = true;
           dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          
+          console.log('head', head);
+          console.log('body', body);
+
+          (head || body).appendChild(dsq);
       })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
