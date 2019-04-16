@@ -303,8 +303,8 @@ mit.main = function() {
 
 
     ui.start_game.html('re-start');
-    ui.tweet.html('tweet score');
-    ui.fb.html('post on fb');
+    ui.tweet.html('playing');
+    ui.fb.html('now');
 
     mit.descend();
 
